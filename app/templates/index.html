@@ -11,34 +11,41 @@
     <meta name="generator" content=" Visual Studio Code - Microsoft">
     <meta http-equiv="refresh" content="30">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <meta http-equiv="X-UA-Compatible " content="ie=edge">
+    
     <title>Site Projeto</title>
 </head>
 
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbarNavegacao">
         <a href="">Home</a>
         <a href="">Reservas</a>
         <a href="">Serviços</a>
         <a href="">Empresa</a>
-    </nav>
+    </nav> -->
     <header>
+        <div class="nav">
+            <a href="">Home</a>
+            <a href="">Serviços</a>
+            <a href="">Contato</a>
+        </div>
         <div class="fundoTransparente">
             <div id="TextoSaboroso">
+                
                 <h1>Restaurante Saboroso!</h1>
             </div>
-            <div id="form">
-                <form>
-                    <h1> Reserve Sua Mesa</h1><br><br>
+            <div id="formdiv">
+                   
+                <form><br>
+                    <h1>Reserva!</h1>
+                    <br>
+                    <label class="label">Nome* </label>
+                    <input  type="text" name="nome">
 
-                    <label>Nome</label>
-                    <input type="text" name="nome" placeholder="Digite seu nome aqui..."><br>
+                    <label class="label">E-mail*</label>
 
-                    <label>E-mail</label>
+                    <input  type="email" name="email">
 
-                    <input type="email" name="email" placeholder="Digite seu email..."><br>
-
-                    <label>Pessoas</label>
+                    <label class="label">Pessoas*</label>
                     <select name="--Selecione--">
                         <option disabled="disable"></option>
                         <option value="1">1</option>
@@ -49,12 +56,12 @@
                         <option value="+5">+5</option>
                     </select><br>
 
-                    <label>Data</label>
-                    <input type="date" name="Data"><br>
-                    <label>Hora</label>
-                    <input type="time"><br>
-                    <label>Preço</label>
-                    <select name="Preço"><br>
+                        <label class="label">Data*</label>
+                        <input  type="date" name="Data" class="formDate">
+                        <label class="label">Hora*</label>
+                        <input  type="time" name="Hora" class="formDate" placeholder="dd/mm/aaaa">
+                        <label class="label">Preço*</label>
+                    <select name="Preço">
                         <option value="--Selecione--">--Selecione--</option>
                         <option value="35.69">R$ 35.69</option>
                         <option value="22.80">R$ 22.80</option>
@@ -65,7 +72,14 @@
             </div>
         </div>
     </header>
-    <section>c</section>
+    <section>
+    <div class="TituloSection">
+        <h1>Nossos Clientes</h1><br>
+        <p>
+                Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. 
+        </p>
+    </div>    
+    </section>
     <aside>d</aside>
     <div class="caixa">e</div>
     <div class="caixa2">f</div>
